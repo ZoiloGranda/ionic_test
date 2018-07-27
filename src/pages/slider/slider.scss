@@ -5,6 +5,9 @@ page-slider {
   .ion-slide{
     height: 100%;
   }
+  .swiper-pagination-bullet-active{
+    background: color($colors, primary, base);
+  }
   .slide1img{
     background-image: url("../../assets/imgs/tiger.png"); // background: url('..…
     background-repeat: no-repeat;

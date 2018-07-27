@@ -1,13 +1,13 @@
-<ion-content padding>
-    <ion-slides>
+<ion-content>
+    <ion-slides pager autoplay="6000" loop>
       <ion-slide>
         <div class="slide1img">
           <br><br><br><br><br>
-          <ion-img width="60" height="60" src="../../assets/icon/truist.png"></ion-img>
+          <ion-img width="60" height="60" src="../../assets/icon/truist-white.png"></ion-img>
           <h2 class="white">Welcome to Truist</h2>
           <p class="white">Use Your Spare Change To Create Real Change</p>
           <br><br><br><br><br><br><br><br>
-          <button ion-button round color="primary">START DONATING</button>
+          <button ion-button round color="primary" (click)="goToLoginPage()">START DONATING</button>
         </div>
       </ion-slide>
       <ion-slide>
