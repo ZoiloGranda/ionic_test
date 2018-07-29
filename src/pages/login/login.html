@@ -8,23 +8,25 @@
 <ion-content padding>
   <div text-center>
     <ion-img width="60" height="60" src="../../assets/icon/truist.png"></ion-img>
-    <h2>Join Us</h2>
-    <p>Connect with causes that move you and the people you love the most.</p>
-    <ion-item>
-      <ion-input type="email" placeholder="Email"></ion-input>
+    <h2 class="lightgray">Join Us</h2>
+    <p class="lightgray">Connect with causes that move you and the people you love the most.</p>
+    <ion-item no-lines>
+      <ion-input class="input-style" type="email" placeholder="Email"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-input type="password" placeholder="Password"></ion-input>
+    <br>
+    <ion-item no-lines>
+      <ion-input class="input-style" type="password" placeholder="Password"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label>Remember</ion-label>
-      <ion-checkbox [(ngModel)]="remember"></ion-checkbox>
+    <ion-item no-lines no-margin>
+      <ion-label class="lightgray">Remember Me</ion-label>
+      <ion-checkbox id="checkbox-square-icon" [(ngModel)]="remember"></ion-checkbox>
     </ion-item>
-    <button ion-button round color="primary">Sign Up</button>
+    <br><br>
+    <button class="white-bold button-size" ion-button round color="primary">SIGN UP</button>
     <p>or</p>
-    <button ion-button icon-start round color="facebook" (click)="goToTabsPage()">
+    <button class="white-bold button-size" ion-button icon-start round color="facebook" (click)="goToTabsPage()">
       <ion-icon name="logo-facebook"></ion-icon>
-      Continue with Facebook
+      CONTINUE WITH FACEBOOK
     </button>
   </div>
 </ion-content>
