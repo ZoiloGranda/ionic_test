@@ -1,23 +1,68 @@
 <ion-content>
-    <ion-slides pager autoplay="6000" loop>
-      <ion-slide>
-        <div class="slide1img">
-          <br><br><br><br><br>
-          <ion-img width="60" height="60" src="../../assets/icon/truist-white.png"></ion-img>
-          <h2 class="white">Welcome to Truist</h2>
-          <p class="white">Use Your Spare Change To Create Real Change</p>
-          <br><br><br><br><br><br><br><br>
-          <button ion-button round color="primary" (click)="goToLoginPage()">START DONATING</button>
-        </div>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 2</h1>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 3</h1>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 4</h1>
-      </ion-slide>
-    </ion-slides>
+  <ion-slides pager autoplay="6000" loop>
+    <ion-slide class="slide1img">
+      <div >
+        <br><br><br><br><br><br><br><br><br>
+        <ion-img width="60" height="60" src="../../assets/icon/truist-white.png"></ion-img>
+        <h2 class="white">Welcome to Truist</h2>
+        <p class="white" margin-right margin-left text-wrap>Use Your Spare Change To Create Real Change</p>
+        <br><br><br><br><br><br><br>
+        <button class="bold-text lightgray darkgray" ion-button round color=light (click)="goToLoginPage()">START DONATING</button>
+      </div>
+    </ion-slide>
+    <ion-slide class="second-slide">
+      <br><br><br>
+      <ion-img width="50" height="50" src="../../assets/icon/truist.png"></ion-img>
+      <br><br>
+      <ion-grid>
+        <ion-row align-items-start>
+          <ion-col no-padding>
+            <ion-img width="140" height="100" src="../../assets/imgs/7.jpeg"></ion-img>
+            <br>
+            <ion-img width="140" height="130" src="../../assets/imgs/2.jpeg"></ion-img>
+          </ion-col>
+          <ion-col no-padding>
+            <ion-img width="170" height="230" src="../../assets/imgs/1.jpg"></ion-img>
+            <br><br>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <h3 class="lightgray">Connect with Causes</h3>
+      <div class="lightgray small-font" text-wrap>We've sourced and vetted a variety of charities in your area to keep you connected with local efforts</div>
+      <br>
+      <button id="second-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+    </ion-slide>
+    <ion-slide class="third-slide">
+      <div>
+        <br><br><br>
+        <ion-img width="50" height="50" src="../../assets/icon/truist.png"></ion-img>
+        <br><br>
+      </div>
+      <ion-img width="330" height="200" src="../../assets/imgs/4.jpeg"></ion-img>
+      <br><br><br><br>
+      <h3 class="lightgray">Determine Your Impact</h3>
+      <div class="lightgray small-font" text-wrap>Give what you want to as many charities you'd like with one-time and recurring donations</div>
+      <br>
+      <button id="third-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+    </ion-slide>
+    <ion-slide >
+      <div>
+        <br><br>
+        <ion-img width="50" height="50" src="../../assets/icon/truist.png"></ion-img>
+        <br><br><br>
+      </div>
+      <ion-grid>
+        <ion-row align-items-start>
+          <ion-col no-padding>
+            <ion-img width="290" height="120" src="../../assets/imgs/6.jpeg"></ion-img><br>
+            <ion-img width="290" height="120" src="../../assets/imgs/5.jpeg"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <h3 class="lightgray">Tax Documentation</h3>
+      <div class="lightgray small-font" margin-right margin-left text-wrap>We'll keep track of everything you donate and send you montlhy receipts so you can cash in during the season</div>
+      <br><br>
+      <button id="fourth-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
