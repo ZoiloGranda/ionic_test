@@ -1,18 +1,18 @@
 <ion-content>
-  <ion-slides pager autoplay="6000" loop>
+  <ion-slides pager autoplay="6000">
     <ion-slide class="slide1img">
-      <div >
+      <div>
         <br><br><br><br><br><br><br><br><br>
         <ion-img width="60" height="60" src="../../assets/icon/truist-white.png"></ion-img>
         <h2 class="white">Welcome to Truist</h2>
         <p class="white" margin-right margin-left text-wrap>Use Your Spare Change To Create Real Change</p>
-        <br><br><br><br><br><br>
-        <button class="bold-text lightgray darkgray" ion-button round color=light (click)="goToLoginPage()">START DONATING</button>
+        <br><br><br><br><br><br><br>
+        <button id="first-button"class="bold-text lightgray darkgray" ion-button round color=light (click)="goToLoginPage()">START DONATING</button>
       </div>
     </ion-slide>
     <ion-slide class="second-slide">
       <br><br>
-      <ion-img width="50" height="50" src="../../assets/icon/truist.png"></ion-img>
+      <ion-img width="50" height="50" src="../../assets/icon/truist.png" text-center></ion-img>
       <br><br>
       <ion-grid>
         <ion-row align-items-start>
@@ -29,8 +29,8 @@
       </ion-grid>
       <h3 class="lightgray">Connect with Causes</h3>
       <div class="lightgray small-font" text-wrap>We've sourced and vetted a variety of charities in your area to keep you connected with local efforts</div>
-      <br>
-      <button id="second-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+      <br><br>
+      <button id="second-button" class="bold-text white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
     </ion-slide>
     <ion-slide class="third-slide">
       <div>
@@ -42,8 +42,8 @@
       <br><br><br><br>
       <h3 class="lightgray">Determine Your Impact</h3>
       <div class="lightgray small-font" text-wrap>Give what you want to as many charities you'd like with one-time and recurring donations</div>
-      <br>
-      <button id="third-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+      <br><br>
+      <button id="third-button" class="bold-text white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
     </ion-slide>
     <ion-slide >
       <div>
@@ -61,8 +61,8 @@
       </ion-grid>
       <h3 class="lightgray">Tax Documentation</h3>
       <div class="lightgray small-font" margin-right margin-left text-wrap>We'll keep track of everything you donate and send you montlhy receipts so you can cash in during the season</div>
-      <br><br>
-      <button id="fourth-button" class="white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
+      <br><br><br>
+      <button id="fourth-button" class="bold-text white buttons-gradient" ion-button round clear=true (click)="goToLoginPage()">GET CONNECTED</button>
     </ion-slide>
   </ion-slides>
 </ion-content>

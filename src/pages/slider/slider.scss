@@ -10,7 +10,6 @@ page-slider {
   }
   button{
     width: 80%;
-    height: 8vh;
   }
   .swiper-pagination-bullet-active{
     background: color($colors, primary, base);
@@ -42,6 +41,9 @@ page-slider {
   }
   .darkgray{
     color: map-get($colors, darkgray)
+  }
+  #first-button, #second-button, #third-button, #fourth-button{
+    height: 9vh;
   }
   #second-button{
     position: relative;
