@@ -5,13 +5,16 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <button class="white-bold button-size" ion-button icon-start round color="facebook" (click)="loginWithFacebook()">
+    <ion-icon name="logo-facebook"></ion-icon>
+    CONTINUE WITH FACEBOOK
+  </button>
+  <ion-card *ngIf="userData">
+    <ion-card-header>{{userData.username}}</ion-card-header>
+    <img [src]="userData.pictue">
+    <ion-card-content>
+      <p>Email:{{userData.email}}</p>
+      <p>First Name:{{userData.first_name}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
