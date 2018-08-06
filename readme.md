@@ -5,7 +5,7 @@ Decompress and go to `<path to the decompresed android sdk>/Android/Sdk/tools/bi
 
 To get the list of available android system images run `./sdkmanager --list` 
 
-Install a image using `./sdkmanager --install "system-images;android-24;default;x86_64"`. Change the system image name for the one you need.
+Install a image using `./sdkmanager --install "system-images;android-24;default;x86_64"`. Change the system image name for the one you need. If you haven't accepted the sdk licenses before, you will be asked now, accept them and continue.
 
 If you get the following warning `Warning: File /home/<YourUser>/.android/repositories.cfg could not be loaded.` .Simply create an empty file on that path, named `repositories.cfg`
 
