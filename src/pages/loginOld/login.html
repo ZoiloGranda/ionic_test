@@ -1,0 +1,32 @@
+<ion-header>
+  <!-- <ion-navbar>
+  <ion-title>Join sdfsdUs</ion-title>
+</ion-navbar> -->
+
+</ion-header>
+
+<ion-content padding>
+  <div text-center>
+    <ion-img width="60" height="60" src="../../assets/icon/truist.png"></ion-img>
+    <h2 class="lightgray">Join Us</h2>
+    <p class="lightgray">Connect with causes that move you and the people you love the most.</p>
+    <ion-item no-lines>
+      <ion-input class="input-style" type="email" placeholder="Email"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item no-lines>
+      <ion-input class="input-style" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item no-lines no-margin>
+      <ion-label class="lightgray">Remember Me</ion-label>
+      <ion-checkbox id="checkbox-square-icon" [(ngModel)]="remember"></ion-checkbox>
+    </ion-item>
+    <br><br>
+    <button class="white-bold button-size" ion-button round color="primary">SIGN UP</button>
+    <p>or</p>
+    <button class="white-bold button-size" ion-button icon-start round color="facebook" (click)="goToTabsPage()">
+      <ion-icon name="logo-facebook"></ion-icon>
+      CONTINUE WITH FACEBOOK
+    </button>
+  </div>
+</ion-content>
