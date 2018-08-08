@@ -14,6 +14,18 @@ You may run the install command with `sudo` or try to fix the permissions
 
 If you get the error `ERROR: JAVA_HOME is set to an invalid directory: /usr/lib/jvm/java-8-oracle`. First go to `/usr/lib/jvm/` and check the name of your java installation folder. Then open the environment file `/etc/environment` and change the `JAVA_HOME` variable to the name of you java folder, e.g: `JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"`, name and version may change.
 
+install cordova npm install -g cordova
+ionic cordova platform add then android
+add ANDROID_HOME export path to installation folder
+run javac -version to see if available, if not install the suggested version (headless)
+sudo apt-get install gradle
+./sdkmanager --install "platform-tools" "platformandroid"
+export ANDROID_HOME=/home/lsrodriguezmz/AndroidStudio_SDK_CMD_LINUX
+/home/lsrodriguezmz/Escritorio/Proyectos_Ionic/IonicTest/ionic_test/platforms/android/app/src/main/res/values/strings.xml
+<string name="fb_app_id">1005005713003967</string>
+<string name="fb_app_name">MyApp</string>
+config.xml
+
 After the android system image download and installation is complete, you can create the Android Virtual Device (AVD)
 
 To create an Android virtual device go to `<path to the decompresed android sdk>/Android/Sdk/tools/bin` and run `./avdmanager create avd --name MyAVD -k "system-images;android-24;default;x86_64"`. Use the name and system image you want.
