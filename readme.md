@@ -19,7 +19,7 @@ ionic cordova platform add then android
 add ANDROID_HOME export path to installation folder
 run javac -version to see if available, if not install the suggested version (headless)
 sudo apt-get install gradle
-./sdkmanager --install "platform-tools" "platformandroid"
+./sdkmanager --install "platform-tools" "platformandroid" "emulator"
 export ANDROID_HOME=/home/lsrodriguezmz/AndroidStudio_SDK_CMD_LINUX
 /home/lsrodriguezmz/Escritorio/Proyectos_Ionic/IonicTest/ionic_test/platforms/android/app/src/main/res/values/strings.xml
 <string name="fb_app_id">1005005713003967</string>
