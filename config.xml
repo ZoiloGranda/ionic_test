@@ -86,6 +86,7 @@
         <variable name="APP_NAME" value="MyApp" />
         <variable name="ANDROID_SDK_VERSION" value="4.+" />
     </plugin>
+    <allow-navigation href="http://192.168.0.88:8100" />
     <engine name="android" spec="7.0.0" />
     <engine name="browser" spec="5.0.3" />
 </widget>

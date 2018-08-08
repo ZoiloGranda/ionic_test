@@ -15,7 +15,7 @@ page-slider {
     background: color($colors, primary, base);
   }
   .slide1img{
-    background-image: url("../../assets/imgs/tiger.png"); // background: url('..…
+    background-image: url("../../assets/imgs/tiger.png");
     background-repeat: no-repeat;
     //100% width and height
     background-size: 100% 100%;
@@ -23,12 +23,19 @@ page-slider {
   .white{
     color: white;
   }
+  .first-slide{
+    padding-top: 30vh;
+  }
+  .margin-top{
+    margin-top: 10vh;
+  }
   h2{
     font-weight: 900;
     font-size: 3rem;
   }
   .bold-text{
     font-weight: 900;
+    font-size: 2rem;
   }
   .small-font{
     font-size: 1.1rem;
@@ -42,23 +49,26 @@ page-slider {
   .darkgray{
     color: map-get($colors, darkgray)
   }
+  .margin-bottom{
+    margin-bottom: 3vh;
+  }
   #first-button, #second-button, #third-button, #fourth-button{
     height: 9vh;
   }
+  #first-button{
+    margin-top: 15vh;
+  }
   #second-button{
-    position: relative;
-    top: 4.3vh;
+    margin-top: 8vh;
   }
   #third-button{
-    position: relative;
-    top:4.5vh;
+    margin-top: 8vh;
   }
   #fourth-button{
-    position: relative;
-    top: 3vh;
+    margin-top: 8vh;
   }
   .swiper-pagination{
-    margin-bottom: 20vh;
+    margin-bottom: 22vh;
   }
-
+  
 }

@@ -1,32 +1,22 @@
-<ion-header>
-  <!-- <ion-navbar>
-  <ion-title>Join sdfsdUs</ion-title>
-</ion-navbar> -->
-
-</ion-header>
-
 <ion-content padding>
-  <div text-center>
+  <div text-center class="margin-top">
     <ion-img width="60" height="60" src="../../assets/icon/truist.png"></ion-img>
     <h2 class="lightgray">Join Us</h2>
     <p class="lightgray">Connect with causes that move you and the people you love the most.</p>
-    <ion-item no-lines>
-      <ion-input class="input-style" type="email" placeholder="Email"></ion-input>
-    </ion-item>
-    <br>
-    <ion-item no-lines>
-      <ion-input class="input-style" type="password" placeholder="Password"></ion-input>
-    </ion-item>
-    <ion-item no-lines no-margin>
-      <ion-label class="lightgray">Remember Me</ion-label>
-      <ion-checkbox id="checkbox-square-icon" [(ngModel)]="remember"></ion-checkbox>
-    </ion-item>
-    <br><br>
-    <button class="white-bold button-size" ion-button round color="primary">SIGN UP</button>
-    <p>or</p>
     <button class="white-bold button-size" ion-button icon-start round color="facebook" (click)="goToTabsPage()">
       <ion-icon name="logo-facebook"></ion-icon>
       CONTINUE WITH FACEBOOK
     </button>
+    <ion-grid no-padding no-margin>
+      <ion-row align-items-start>
+        <ion-col no-padding>
+          <ion-img width="140" height="85" src="../../assets/imgs/7.jpeg"></ion-img>
+          <ion-img width="140" height="114" src="../../assets/imgs/2.jpeg"></ion-img>
+        </ion-col>
+        <ion-col no-padding>
+          <ion-img width="170" height="200" src="../../assets/imgs/1.jpg"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
